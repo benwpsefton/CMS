@@ -17,6 +17,14 @@ function my_theme_enqueue_styles() {
 	);
 }
 
+function filter_terms( $content ) {
+    $terms = array('Hello', 'world');
+    $content = str_ireplace( $terms, '{REDACTED}', $content );
+    return $content;
+}
+
+add_filter( 'the_title', 'filter_terms' );
+
 // registering menus
 register_nav_menus( array(
 	'primary'   => __( 'Primary Menu', 'mychildtheme' ),
