@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Simplest Menu</title>
+<style type="text/css">
+body {
+  background: #E3CAA1; 	/*Change page background color*/
+  max-width: 800px;
+}
+
+div.custom-menu-class a {
+	text-decoration: none; /* remove underline */
+	color: #fff; /* change color */
+	padding: 0.5em 1.5em; add space around text */
+}
+
+div.custom-menu-class ul {
+	list-style: none; /* remove bullets */
+}
+
+div.custom-menu-class ul li {
+	position: relative;
+	display: inline-block; /* Display in one line */
+	background: #888; /* Change Background color of list items */
+	padding: 1.5em 0em;  /* add space around text */
+	font: bold 1em/0.5em sans-serif;
+	border-radius: 0.5em;
+}
+
+div.custom-menu-class ul li:hover {
+	background: #000; /* change color on hover */
+}
+
+div.custom-menu-class ul li:hover ul {
+	left: 0; /* bring back sub menus on screen */
+}
+
+div.custom-menu-class ul li ul {
+	/* display: none; */ /* DON'T DO THIS! */
+	position: absolute;
+	left: -99999em;  /* place sub-menus off screen */
+	width: 200%;
+	top: 3.5em;
+	padding: 0;
+}
+
+div.custom-menu-class ul li ul li {
+	display: block; /* display sub-menu as one large block */
+	background: #000;
+}
+
+div.custom-menu-class ul li ul li:hover {
+	background: #888;
+}
+
+</style>
+</head>
+
+<body>
+<div class="custom-menu-class">
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">About</a></li>
+		<li>
+			<a href="#">Portfolio</a>
+			<ul>
+				<li><a href="#">Web Design</a></li>
+				<li><a href="#">Web Development</a></li>
+				<li><a href="#">Illustrations</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Blogs</a>
+	  
+			<ul>
+				<li><a href="#">Web Design</a></li>
+				<li><a href="#">Development</a></li>
+				<li><a href="#">Illustrations</a></li>
+			</ul>
+	  
+		</li>
+		<li><a href="#">Contact</a>
+			<ul>
+				<li><a href="#">Design</a></li>
+				<li><a href="#">Development</a></li>
+				<li><a href="#">Pictures</a></li>
+			</ul>
+		</li>
+	</ul>
+</div>
+</body>
+</html>

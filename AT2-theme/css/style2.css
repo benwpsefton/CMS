@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@font-face {
+    font-family: 'Marvel';
+    src: url('../fonts/Marvel-Regular.ttf');
+    font-style: normal;
+}
+
+h1 {
+    color: #F4F420;
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #F4F420;
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+    text-shadow: 3px 3px 10px black;
+}
+
+div.custom-menu-class ul {
+    list-style-type: none;
+    list-style: none;
+    list-style-image: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+div.custom-menu-class li {
+    margin: 25px;
+}
+
+div.custom-menu-class a {
+    color: #F4F420;
+    /*text-shadow: 1px 1px 0px #F51A19;
+    text-shadow: 2px 2px 0px #F51A19;
+    text-shadow: 3px 3px 0px #F51A19;
+    text-shadow: 4px 4px 0px #F51A19;*/
+    text-shadow:
+        0px 0px 0 rgb(221,1,1),
+        -1px 0px 0 rgb(206,-14,-14),
+        -2px 1px 0 rgb(192,-28,-28),
+        -3px 2px 0 rgb(177,-43,-43),
+        -4px 3px 0 rgb(163,-57,-57),
+        -5px 4px 6px black,
+        0px 0px 6px rgba(0,0,0,.2);
+    text-decoration: none;
+    font-size: 56px;
+    font-family: 'Marvel', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item {
+    transform: skew(6deg, -1deg);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #052542;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.about {
+    font-size: 36px;
+    width: 60vh;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.email {
+    font-size: 48px;
+    width: 60vh;
+    color: blueviolet;
+}
+
+img {
+    box-shadow: 8px 8px 8px -4px #f1c232;
+}
+
+p {
+    font-size: 24px;
+    color: #F4F420;
+    text-shadow: 1px 1px 4px black;
+}
+
+.all {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-header-widget {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-text {
+    width: 30vh;
+}

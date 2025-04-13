@@ -1,0 +1,14 @@
+/*
+ Theme Name:   FoundationWP
+ Description:  Foundation 5 meets WordPress.
+ Author:       Geoff Graham
+ Author URI:   http://geoffgraham.me
+ Version:      1.0.0
+ Tags:         Foundation
+ Text Domain:  foundation-wp
+*/
+
+/* Import Foundation Styles */
+@import 'stylesheets/app.css';
+
+/* Roll your own styles below to override defaults */
